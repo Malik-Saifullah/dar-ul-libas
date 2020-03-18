@@ -507,15 +507,16 @@ ul {
       min-width: 110px;
       min-height: 40px;
       border: 0;
-      background-color: #f0b11a; }
+      background-color: #f0b11a;
+      cursor: pointer; }
 
-/* line 454, main.scss */
+/* line 455, main.scss */
 footer {
   background-color: #1c1a1b; }
-  /* line 456, main.scss */
+  /* line 457, main.scss */
   footer .footer-top {
     padding: 10vh 0; }
-    /* line 458, main.scss */
+    /* line 459, main.scss */
     footer .footer-top .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -523,33 +524,33 @@ footer {
               column-gap: 10px;
       color: #6d6d6d; }
       @media (max-width: 768px) {
-        /* line 458, main.scss */
+        /* line 459, main.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
-        /* line 458, main.scss */
+        /* line 459, main.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr; } }
       @media (max-width: 768px) {
-        /* line 469, main.scss */
+        /* line 470, main.scss */
         footer .footer-top .container .col_2, footer .footer-top .container .col_3, footer .footer-top .container .col_4 {
           display: none; } }
-      /* line 474, main.scss */
+      /* line 475, main.scss */
       footer .footer-top .container p {
         font-size: 14px;
         line-height: 1.3;
         font-weight: 300;
         margin: 10px auto; }
-      /* line 480, main.scss */
+      /* line 481, main.scss */
       footer .footer-top .container a {
         font-size: 14px;
         line-height: 1.7;
         font-weight: 300;
         color: #6d6d6d; }
-      /* line 486, main.scss */
+      /* line 487, main.scss */
       footer .footer-top .container img {
         max-width: 150px; }
-      /* line 489, main.scss */
+      /* line 490, main.scss */
       footer .footer-top .container .contact-title,
       footer .footer-top .container .footer-title {
         font-size: 17px;
@@ -557,12 +558,12 @@ footer {
         font-weight: 600;
         margin: 10px 0 5px 0;
         color: #fff; }
-      /* line 497, main.scss */
+      /* line 498, main.scss */
       footer .footer-top .container .footer-title {
         position: relative;
         padding: 0 0 15px 0;
         text-transform: uppercase; }
-      /* line 502, main.scss */
+      /* line 503, main.scss */
       footer .footer-top .container .footer-title::after {
         content: "";
         position: absolute;
@@ -571,60 +572,60 @@ footer {
         left: 0;
         bottom: 0;
         background-color: #f0b11a; }
-      /* line 512, main.scss */
+      /* line 513, main.scss */
       footer .footer-top .container ul li:nth-child(1) {
         margin-top: 25px; }
-      /* line 515, main.scss */
+      /* line 516, main.scss */
       footer .footer-top .container ul li:hover a {
         color: #f0b11a; }
-      /* line 520, main.scss */
+      /* line 521, main.scss */
       footer .footer-top .container ul.social-icon li {
         display: inline;
         margin: 0 10px; }
-        /* line 523, main.scss */
+        /* line 524, main.scss */
         footer .footer-top .container ul.social-icon li a {
           font-size: 16px; }
-        /* line 526, main.scss */
+        /* line 527, main.scss */
         footer .footer-top .container ul.social-icon li a:hover {
           color: #f0b11a; }
-      /* line 531, main.scss */
+      /* line 532, main.scss */
       footer .footer-top .container .col_5 {
         display: none;
         /* Accordion styles */ }
         @media (max-width: 768px) {
-          /* line 531, main.scss */
+          /* line 532, main.scss */
           footer .footer-top .container .col_5 {
             display: block; } }
         @media (max-width: 500px) {
-          /* line 531, main.scss */
+          /* line 532, main.scss */
           footer .footer-top .container .col_5 {
             margin-top: 20px; } }
-        /* line 539, main.scss */
+        /* line 540, main.scss */
         footer .footer-top .container .col_5 input {
           position: absolute;
           opacity: 0;
           z-index: -1; }
-        /* line 545, main.scss */
+        /* line 546, main.scss */
         footer .footer-top .container .col_5 .row {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          /* line 547, main.scss */
+          /* line 548, main.scss */
           footer .footer-top .container .col_5 .row .col {
             -webkit-box-flex: 1;
                 -ms-flex: 1;
                     flex: 1; }
-            /* line 549, main.scss */
+            /* line 550, main.scss */
             footer .footer-top .container .col_5 .row .col:last-child {
               margin-left: 1em; }
-        /* line 555, main.scss */
+        /* line 556, main.scss */
         footer .footer-top .container .col_5 .tabs {
           overflow: hidden; }
-        /* line 558, main.scss */
+        /* line 559, main.scss */
         footer .footer-top .container .col_5 .tab {
           width: 100%;
           overflow: hidden; }
-          /* line 561, main.scss */
+          /* line 562, main.scss */
           footer .footer-top .container .col_5 .tab-label {
             font-size: 15px;
             line-height: 1.3;
@@ -638,7 +639,7 @@ footer {
             color: #fff;
             padding: 1em;
             cursor: pointer; }
-            /* line 570, main.scss */
+            /* line 571, main.scss */
             footer .footer-top .container .col_5 .tab-label::before {
               font-family: "Font Awesome 5 Free";
               content: "\f054";
@@ -651,7 +652,7 @@ footer {
               -webkit-transition: all .35s;
               transition: all .35s;
               margin-right: 10px; }
-          /* line 583, main.scss */
+          /* line 584, main.scss */
           footer .footer-top .container .col_5 .tab-content {
             font-size: 13px;
             line-height: 1.5;
@@ -663,13 +664,13 @@ footer {
             color: #656260;
             -webkit-transition: all .35s;
             transition: all .35s; }
-            /* line 594, main.scss */
+            /* line 595, main.scss */
             footer .footer-top .container .col_5 .tab-content ul li:nth-child(1) {
               margin-top: 0px; }
-            /* line 597, main.scss */
+            /* line 598, main.scss */
             footer .footer-top .container .col_5 .tab-content ul li:hover a {
               color: #f0b11a; }
-          /* line 602, main.scss */
+          /* line 603, main.scss */
           footer .footer-top .container .col_5 .tab-close {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -681,23 +682,23 @@ footer {
             font-size: 0.75em;
             background: #656260;
             cursor: pointer; }
-            /* line 609, main.scss */
+            /* line 610, main.scss */
             footer .footer-top .container .col_5 .tab-close:hover {
               background: #4b4947; }
-        /* line 617, main.scss */
+        /* line 618, main.scss */
         footer .footer-top .container .col_5 input:checked + .tab-label::before {
           -webkit-transform: rotate(90deg);
                   transform: rotate(90deg); }
-        /* line 621, main.scss */
+        /* line 622, main.scss */
         footer .footer-top .container .col_5 input:checked ~ .tab-content {
           max-height: 100vh;
           padding: 1em;
           margin-left: 25px; }
-  /* line 630, main.scss */
+  /* line 631, main.scss */
   footer .footer-bottom {
     color: #fff;
     background-color: #000; }
-    /* line 633, main.scss */
+    /* line 634, main.scss */
     footer .footer-bottom .container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -708,7 +709,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      /* line 637, main.scss */
+      /* line 638, main.scss */
       footer .footer-bottom .container .copyright {
         font-size: 15px;
         line-height: 1.3;

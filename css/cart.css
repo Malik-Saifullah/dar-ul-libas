@@ -971,15 +971,16 @@ ul {
       min-width: 110px;
       min-height: 40px;
       border: 0;
-      background-color: #f0b11a; }
+      background-color: #f0b11a;
+      cursor: pointer; }
 
-/* line 913, cart.scss */
+/* line 914, cart.scss */
 footer {
   background-color: #1c1a1b; }
-  /* line 915, cart.scss */
+  /* line 916, cart.scss */
   footer .footer-top {
     padding: 10vh 0; }
-    /* line 917, cart.scss */
+    /* line 918, cart.scss */
     footer .footer-top .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -987,33 +988,33 @@ footer {
               column-gap: 10px;
       color: #6d6d6d; }
       @media (max-width: 768px) {
-        /* line 917, cart.scss */
+        /* line 918, cart.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
-        /* line 917, cart.scss */
+        /* line 918, cart.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr; } }
       @media (max-width: 768px) {
-        /* line 928, cart.scss */
+        /* line 929, cart.scss */
         footer .footer-top .container .col_2, footer .footer-top .container .col_3, footer .footer-top .container .col_4 {
           display: none; } }
-      /* line 933, cart.scss */
+      /* line 934, cart.scss */
       footer .footer-top .container p {
         font-size: 14px;
         line-height: 1.3;
         font-weight: 300;
         margin: 10px auto; }
-      /* line 939, cart.scss */
+      /* line 940, cart.scss */
       footer .footer-top .container a {
         font-size: 14px;
         line-height: 1.7;
         font-weight: 300;
         color: #6d6d6d; }
-      /* line 945, cart.scss */
+      /* line 946, cart.scss */
       footer .footer-top .container img {
         max-width: 150px; }
-      /* line 948, cart.scss */
+      /* line 949, cart.scss */
       footer .footer-top .container .contact-title,
       footer .footer-top .container .footer-title {
         font-size: 17px;
@@ -1021,12 +1022,12 @@ footer {
         font-weight: 600;
         margin: 10px 0 5px 0;
         color: #fff; }
-      /* line 956, cart.scss */
+      /* line 957, cart.scss */
       footer .footer-top .container .footer-title {
         position: relative;
         padding: 0 0 15px 0;
         text-transform: uppercase; }
-      /* line 961, cart.scss */
+      /* line 962, cart.scss */
       footer .footer-top .container .footer-title::after {
         content: "";
         position: absolute;
@@ -1035,60 +1036,60 @@ footer {
         left: 0;
         bottom: 0;
         background-color: #f0b11a; }
-      /* line 971, cart.scss */
+      /* line 972, cart.scss */
       footer .footer-top .container ul li:nth-child(1) {
         margin-top: 25px; }
-      /* line 974, cart.scss */
+      /* line 975, cart.scss */
       footer .footer-top .container ul li:hover a {
         color: #f0b11a; }
-      /* line 979, cart.scss */
+      /* line 980, cart.scss */
       footer .footer-top .container ul.social-icon li {
         display: inline;
         margin: 0 10px; }
-        /* line 982, cart.scss */
+        /* line 983, cart.scss */
         footer .footer-top .container ul.social-icon li a {
           font-size: 16px; }
-        /* line 985, cart.scss */
+        /* line 986, cart.scss */
         footer .footer-top .container ul.social-icon li a:hover {
           color: #f0b11a; }
-      /* line 990, cart.scss */
+      /* line 991, cart.scss */
       footer .footer-top .container .col_5 {
         display: none;
         /* Accordion styles */ }
         @media (max-width: 768px) {
-          /* line 990, cart.scss */
+          /* line 991, cart.scss */
           footer .footer-top .container .col_5 {
             display: block; } }
         @media (max-width: 500px) {
-          /* line 990, cart.scss */
+          /* line 991, cart.scss */
           footer .footer-top .container .col_5 {
             margin-top: 20px; } }
-        /* line 998, cart.scss */
+        /* line 999, cart.scss */
         footer .footer-top .container .col_5 input {
           position: absolute;
           opacity: 0;
           z-index: -1; }
-        /* line 1004, cart.scss */
+        /* line 1005, cart.scss */
         footer .footer-top .container .col_5 .row {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          /* line 1006, cart.scss */
+          /* line 1007, cart.scss */
           footer .footer-top .container .col_5 .row .col {
             -webkit-box-flex: 1;
                 -ms-flex: 1;
                     flex: 1; }
-            /* line 1008, cart.scss */
+            /* line 1009, cart.scss */
             footer .footer-top .container .col_5 .row .col:last-child {
               margin-left: 1em; }
-        /* line 1014, cart.scss */
+        /* line 1015, cart.scss */
         footer .footer-top .container .col_5 .tabs {
           overflow: hidden; }
-        /* line 1017, cart.scss */
+        /* line 1018, cart.scss */
         footer .footer-top .container .col_5 .tab {
           width: 100%;
           overflow: hidden; }
-          /* line 1020, cart.scss */
+          /* line 1021, cart.scss */
           footer .footer-top .container .col_5 .tab-label {
             font-size: 15px;
             line-height: 1.3;
@@ -1102,7 +1103,7 @@ footer {
             color: #fff;
             padding: 1em;
             cursor: pointer; }
-            /* line 1029, cart.scss */
+            /* line 1030, cart.scss */
             footer .footer-top .container .col_5 .tab-label::before {
               font-family: "Font Awesome 5 Free";
               content: "\f054";
@@ -1115,7 +1116,7 @@ footer {
               -webkit-transition: all .35s;
               transition: all .35s;
               margin-right: 10px; }
-          /* line 1042, cart.scss */
+          /* line 1043, cart.scss */
           footer .footer-top .container .col_5 .tab-content {
             font-size: 13px;
             line-height: 1.5;
@@ -1127,13 +1128,13 @@ footer {
             color: #656260;
             -webkit-transition: all .35s;
             transition: all .35s; }
-            /* line 1053, cart.scss */
+            /* line 1054, cart.scss */
             footer .footer-top .container .col_5 .tab-content ul li:nth-child(1) {
               margin-top: 0px; }
-            /* line 1056, cart.scss */
+            /* line 1057, cart.scss */
             footer .footer-top .container .col_5 .tab-content ul li:hover a {
               color: #f0b11a; }
-          /* line 1061, cart.scss */
+          /* line 1062, cart.scss */
           footer .footer-top .container .col_5 .tab-close {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1145,23 +1146,23 @@ footer {
             font-size: 0.75em;
             background: #656260;
             cursor: pointer; }
-            /* line 1068, cart.scss */
+            /* line 1069, cart.scss */
             footer .footer-top .container .col_5 .tab-close:hover {
               background: #4b4947; }
-        /* line 1076, cart.scss */
+        /* line 1077, cart.scss */
         footer .footer-top .container .col_5 input:checked + .tab-label::before {
           -webkit-transform: rotate(90deg);
                   transform: rotate(90deg); }
-        /* line 1080, cart.scss */
+        /* line 1081, cart.scss */
         footer .footer-top .container .col_5 input:checked ~ .tab-content {
           max-height: 100vh;
           padding: 1em;
           margin-left: 25px; }
-  /* line 1089, cart.scss */
+  /* line 1090, cart.scss */
   footer .footer-bottom {
     color: #fff;
     background-color: #000; }
-    /* line 1092, cart.scss */
+    /* line 1093, cart.scss */
     footer .footer-bottom .container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1172,7 +1173,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      /* line 1096, cart.scss */
+      /* line 1097, cart.scss */
       footer .footer-bottom .container .copyright {
         font-size: 15px;
         line-height: 1.3;

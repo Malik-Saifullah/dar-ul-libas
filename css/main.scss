@@ -1,7 +1,7 @@
-@import "./vendor/font-awesome";
-@import "./vendor/variables";
-@import "./vendor/mixin";
-@import "./vendor/fonts";
+@import "vendor/font-awesome";
+@import "vendor/variables";
+@import "vendor/mixin";
+@import "vendor/fonts";
 
 
 * {
@@ -446,6 +446,7 @@ ul {
                 min-height: 40px;
                 border: 0;
                 background-color: $colorButterCup;
+                cursor: pointer;
             }
         }
     }

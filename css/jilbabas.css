@@ -850,15 +850,16 @@ ul {
       min-width: 110px;
       min-height: 40px;
       border: 0;
-      background-color: #f0b11a; }
+      background-color: #f0b11a;
+      cursor: pointer; }
 
-/* line 793, jilbabas.scss */
+/* line 794, jilbabas.scss */
 footer {
   background-color: #1c1a1b; }
-  /* line 795, jilbabas.scss */
+  /* line 796, jilbabas.scss */
   footer .footer-top {
     padding: 10vh 0; }
-    /* line 797, jilbabas.scss */
+    /* line 798, jilbabas.scss */
     footer .footer-top .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -866,33 +867,33 @@ footer {
               column-gap: 10px;
       color: #6d6d6d; }
       @media (max-width: 768px) {
-        /* line 797, jilbabas.scss */
+        /* line 798, jilbabas.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
-        /* line 797, jilbabas.scss */
+        /* line 798, jilbabas.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr; } }
       @media (max-width: 768px) {
-        /* line 808, jilbabas.scss */
+        /* line 809, jilbabas.scss */
         footer .footer-top .container .col_2, footer .footer-top .container .col_3, footer .footer-top .container .col_4 {
           display: none; } }
-      /* line 813, jilbabas.scss */
+      /* line 814, jilbabas.scss */
       footer .footer-top .container p {
         font-size: 14px;
         line-height: 1.3;
         font-weight: 300;
         margin: 10px auto; }
-      /* line 819, jilbabas.scss */
+      /* line 820, jilbabas.scss */
       footer .footer-top .container a {
         font-size: 14px;
         line-height: 1.7;
         font-weight: 300;
         color: #6d6d6d; }
-      /* line 825, jilbabas.scss */
+      /* line 826, jilbabas.scss */
       footer .footer-top .container img {
         max-width: 150px; }
-      /* line 828, jilbabas.scss */
+      /* line 829, jilbabas.scss */
       footer .footer-top .container .contact-title,
       footer .footer-top .container .footer-title {
         font-size: 17px;
@@ -900,12 +901,12 @@ footer {
         font-weight: 600;
         margin: 10px 0 5px 0;
         color: #fff; }
-      /* line 836, jilbabas.scss */
+      /* line 837, jilbabas.scss */
       footer .footer-top .container .footer-title {
         position: relative;
         padding: 0 0 15px 0;
         text-transform: uppercase; }
-      /* line 841, jilbabas.scss */
+      /* line 842, jilbabas.scss */
       footer .footer-top .container .footer-title::after {
         content: "";
         position: absolute;
@@ -914,60 +915,60 @@ footer {
         left: 0;
         bottom: 0;
         background-color: #f0b11a; }
-      /* line 851, jilbabas.scss */
+      /* line 852, jilbabas.scss */
       footer .footer-top .container ul li:nth-child(1) {
         margin-top: 25px; }
-      /* line 854, jilbabas.scss */
+      /* line 855, jilbabas.scss */
       footer .footer-top .container ul li:hover a {
         color: #f0b11a; }
-      /* line 859, jilbabas.scss */
+      /* line 860, jilbabas.scss */
       footer .footer-top .container ul.social-icon li {
         display: inline;
         margin: 0 10px; }
-        /* line 862, jilbabas.scss */
+        /* line 863, jilbabas.scss */
         footer .footer-top .container ul.social-icon li a {
           font-size: 16px; }
-        /* line 865, jilbabas.scss */
+        /* line 866, jilbabas.scss */
         footer .footer-top .container ul.social-icon li a:hover {
           color: #f0b11a; }
-      /* line 870, jilbabas.scss */
+      /* line 871, jilbabas.scss */
       footer .footer-top .container .col_5 {
         display: none;
         /* Accordion styles */ }
         @media (max-width: 768px) {
-          /* line 870, jilbabas.scss */
+          /* line 871, jilbabas.scss */
           footer .footer-top .container .col_5 {
             display: block; } }
         @media (max-width: 500px) {
-          /* line 870, jilbabas.scss */
+          /* line 871, jilbabas.scss */
           footer .footer-top .container .col_5 {
             margin-top: 20px; } }
-        /* line 878, jilbabas.scss */
+        /* line 879, jilbabas.scss */
         footer .footer-top .container .col_5 input {
           position: absolute;
           opacity: 0;
           z-index: -1; }
-        /* line 884, jilbabas.scss */
+        /* line 885, jilbabas.scss */
         footer .footer-top .container .col_5 .row {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          /* line 886, jilbabas.scss */
+          /* line 887, jilbabas.scss */
           footer .footer-top .container .col_5 .row .col {
             -webkit-box-flex: 1;
                 -ms-flex: 1;
                     flex: 1; }
-            /* line 888, jilbabas.scss */
+            /* line 889, jilbabas.scss */
             footer .footer-top .container .col_5 .row .col:last-child {
               margin-left: 1em; }
-        /* line 894, jilbabas.scss */
+        /* line 895, jilbabas.scss */
         footer .footer-top .container .col_5 .tabs {
           overflow: hidden; }
-        /* line 897, jilbabas.scss */
+        /* line 898, jilbabas.scss */
         footer .footer-top .container .col_5 .tab {
           width: 100%;
           overflow: hidden; }
-          /* line 900, jilbabas.scss */
+          /* line 901, jilbabas.scss */
           footer .footer-top .container .col_5 .tab-label {
             font-size: 15px;
             line-height: 1.3;
@@ -981,7 +982,7 @@ footer {
             color: #fff;
             padding: 1em;
             cursor: pointer; }
-            /* line 909, jilbabas.scss */
+            /* line 910, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-label::before {
               font-family: "Font Awesome 5 Free";
               content: "\f054";
@@ -994,7 +995,7 @@ footer {
               -webkit-transition: all .35s;
               transition: all .35s;
               margin-right: 10px; }
-          /* line 922, jilbabas.scss */
+          /* line 923, jilbabas.scss */
           footer .footer-top .container .col_5 .tab-content {
             font-size: 13px;
             line-height: 1.5;
@@ -1006,13 +1007,13 @@ footer {
             color: #656260;
             -webkit-transition: all .35s;
             transition: all .35s; }
-            /* line 933, jilbabas.scss */
+            /* line 934, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-content ul li:nth-child(1) {
               margin-top: 0px; }
-            /* line 936, jilbabas.scss */
+            /* line 937, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-content ul li:hover a {
               color: #f0b11a; }
-          /* line 941, jilbabas.scss */
+          /* line 942, jilbabas.scss */
           footer .footer-top .container .col_5 .tab-close {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1024,23 +1025,23 @@ footer {
             font-size: 0.75em;
             background: #656260;
             cursor: pointer; }
-            /* line 948, jilbabas.scss */
+            /* line 949, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-close:hover {
               background: #4b4947; }
-        /* line 956, jilbabas.scss */
+        /* line 957, jilbabas.scss */
         footer .footer-top .container .col_5 input:checked + .tab-label::before {
           -webkit-transform: rotate(90deg);
                   transform: rotate(90deg); }
-        /* line 960, jilbabas.scss */
+        /* line 961, jilbabas.scss */
         footer .footer-top .container .col_5 input:checked ~ .tab-content {
           max-height: 100vh;
           padding: 1em;
           margin-left: 25px; }
-  /* line 969, jilbabas.scss */
+  /* line 970, jilbabas.scss */
   footer .footer-bottom {
     color: #fff;
     background-color: #000; }
-    /* line 972, jilbabas.scss */
+    /* line 973, jilbabas.scss */
     footer .footer-bottom .container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1051,7 +1052,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      /* line 976, jilbabas.scss */
+      /* line 977, jilbabas.scss */
       footer .footer-bottom .container .copyright {
         font-size: 15px;
         line-height: 1.3;

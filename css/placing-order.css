@@ -948,15 +948,16 @@ ul {
       min-width: 110px;
       min-height: 40px;
       border: 0;
-      background-color: #f0b11a; }
+      background-color: #f0b11a;
+      cursor: pointer; }
 
-/* line 915, placing-order.scss */
+/* line 916, placing-order.scss */
 footer {
   background-color: #1c1a1b; }
-  /* line 917, placing-order.scss */
+  /* line 918, placing-order.scss */
   footer .footer-top {
     padding: 10vh 0; }
-    /* line 919, placing-order.scss */
+    /* line 920, placing-order.scss */
     footer .footer-top .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -964,33 +965,33 @@ footer {
               column-gap: 10px;
       color: #6d6d6d; }
       @media (max-width: 768px) {
-        /* line 919, placing-order.scss */
+        /* line 920, placing-order.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
-        /* line 919, placing-order.scss */
+        /* line 920, placing-order.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr; } }
       @media (max-width: 768px) {
-        /* line 930, placing-order.scss */
+        /* line 931, placing-order.scss */
         footer .footer-top .container .col_2, footer .footer-top .container .col_3, footer .footer-top .container .col_4 {
           display: none; } }
-      /* line 935, placing-order.scss */
+      /* line 936, placing-order.scss */
       footer .footer-top .container p {
         font-size: 14px;
         line-height: 1.3;
         font-weight: 300;
         margin: 10px auto; }
-      /* line 941, placing-order.scss */
+      /* line 942, placing-order.scss */
       footer .footer-top .container a {
         font-size: 14px;
         line-height: 1.7;
         font-weight: 300;
         color: #6d6d6d; }
-      /* line 947, placing-order.scss */
+      /* line 948, placing-order.scss */
       footer .footer-top .container img {
         max-width: 150px; }
-      /* line 950, placing-order.scss */
+      /* line 951, placing-order.scss */
       footer .footer-top .container .contact-title,
       footer .footer-top .container .footer-title {
         font-size: 17px;
@@ -998,12 +999,12 @@ footer {
         font-weight: 600;
         margin: 10px 0 5px 0;
         color: #fff; }
-      /* line 958, placing-order.scss */
+      /* line 959, placing-order.scss */
       footer .footer-top .container .footer-title {
         position: relative;
         padding: 0 0 15px 0;
         text-transform: uppercase; }
-      /* line 963, placing-order.scss */
+      /* line 964, placing-order.scss */
       footer .footer-top .container .footer-title::after {
         content: "";
         position: absolute;
@@ -1012,60 +1013,60 @@ footer {
         left: 0;
         bottom: 0;
         background-color: #f0b11a; }
-      /* line 973, placing-order.scss */
+      /* line 974, placing-order.scss */
       footer .footer-top .container ul li:nth-child(1) {
         margin-top: 25px; }
-      /* line 976, placing-order.scss */
+      /* line 977, placing-order.scss */
       footer .footer-top .container ul li:hover a {
         color: #f0b11a; }
-      /* line 981, placing-order.scss */
+      /* line 982, placing-order.scss */
       footer .footer-top .container ul.social-icon li {
         display: inline;
         margin: 0 10px; }
-        /* line 984, placing-order.scss */
+        /* line 985, placing-order.scss */
         footer .footer-top .container ul.social-icon li a {
           font-size: 16px; }
-        /* line 987, placing-order.scss */
+        /* line 988, placing-order.scss */
         footer .footer-top .container ul.social-icon li a:hover {
           color: #f0b11a; }
-      /* line 992, placing-order.scss */
+      /* line 993, placing-order.scss */
       footer .footer-top .container .col_5 {
         display: none;
         /* Accordion styles */ }
         @media (max-width: 768px) {
-          /* line 992, placing-order.scss */
+          /* line 993, placing-order.scss */
           footer .footer-top .container .col_5 {
             display: block; } }
         @media (max-width: 500px) {
-          /* line 992, placing-order.scss */
+          /* line 993, placing-order.scss */
           footer .footer-top .container .col_5 {
             margin-top: 20px; } }
-        /* line 1000, placing-order.scss */
+        /* line 1001, placing-order.scss */
         footer .footer-top .container .col_5 input {
           position: absolute;
           opacity: 0;
           z-index: -1; }
-        /* line 1006, placing-order.scss */
+        /* line 1007, placing-order.scss */
         footer .footer-top .container .col_5 .row {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          /* line 1008, placing-order.scss */
+          /* line 1009, placing-order.scss */
           footer .footer-top .container .col_5 .row .col {
             -webkit-box-flex: 1;
                 -ms-flex: 1;
                     flex: 1; }
-            /* line 1010, placing-order.scss */
+            /* line 1011, placing-order.scss */
             footer .footer-top .container .col_5 .row .col:last-child {
               margin-left: 1em; }
-        /* line 1016, placing-order.scss */
+        /* line 1017, placing-order.scss */
         footer .footer-top .container .col_5 .tabs {
           overflow: hidden; }
-        /* line 1019, placing-order.scss */
+        /* line 1020, placing-order.scss */
         footer .footer-top .container .col_5 .tab {
           width: 100%;
           overflow: hidden; }
-          /* line 1022, placing-order.scss */
+          /* line 1023, placing-order.scss */
           footer .footer-top .container .col_5 .tab-label {
             font-size: 15px;
             line-height: 1.3;
@@ -1079,7 +1080,7 @@ footer {
             color: #fff;
             padding: 1em;
             cursor: pointer; }
-            /* line 1031, placing-order.scss */
+            /* line 1032, placing-order.scss */
             footer .footer-top .container .col_5 .tab-label::before {
               font-family: "Font Awesome 5 Free";
               content: "\f054";
@@ -1092,7 +1093,7 @@ footer {
               -webkit-transition: all .35s;
               transition: all .35s;
               margin-right: 10px; }
-          /* line 1044, placing-order.scss */
+          /* line 1045, placing-order.scss */
           footer .footer-top .container .col_5 .tab-content {
             font-size: 13px;
             line-height: 1.5;
@@ -1104,13 +1105,13 @@ footer {
             color: #656260;
             -webkit-transition: all .35s;
             transition: all .35s; }
-            /* line 1055, placing-order.scss */
+            /* line 1056, placing-order.scss */
             footer .footer-top .container .col_5 .tab-content ul li:nth-child(1) {
               margin-top: 0px; }
-            /* line 1058, placing-order.scss */
+            /* line 1059, placing-order.scss */
             footer .footer-top .container .col_5 .tab-content ul li:hover a {
               color: #f0b11a; }
-          /* line 1063, placing-order.scss */
+          /* line 1064, placing-order.scss */
           footer .footer-top .container .col_5 .tab-close {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1122,23 +1123,23 @@ footer {
             font-size: 0.75em;
             background: #656260;
             cursor: pointer; }
-            /* line 1070, placing-order.scss */
+            /* line 1071, placing-order.scss */
             footer .footer-top .container .col_5 .tab-close:hover {
               background: #4b4947; }
-        /* line 1078, placing-order.scss */
+        /* line 1079, placing-order.scss */
         footer .footer-top .container .col_5 input:checked + .tab-label::before {
           -webkit-transform: rotate(90deg);
                   transform: rotate(90deg); }
-        /* line 1082, placing-order.scss */
+        /* line 1083, placing-order.scss */
         footer .footer-top .container .col_5 input:checked ~ .tab-content {
           max-height: 100vh;
           padding: 1em;
           margin-left: 25px; }
-  /* line 1091, placing-order.scss */
+  /* line 1092, placing-order.scss */
   footer .footer-bottom {
     color: #fff;
     background-color: #000; }
-    /* line 1094, placing-order.scss */
+    /* line 1095, placing-order.scss */
     footer .footer-bottom .container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1149,7 +1150,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      /* line 1098, placing-order.scss */
+      /* line 1099, placing-order.scss */
       footer .footer-bottom .container .copyright {
         font-size: 15px;
         line-height: 1.3;
