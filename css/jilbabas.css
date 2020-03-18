@@ -1,79 +1,112 @@
 @import url(../../fonts/css/all.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+/* line 7, jilbabas.scss */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none; }
 
+/* line 12, jilbabas.scss */
 html {
   scroll-behavior: smooth; }
 
+/* line 16, jilbabas.scss */
 html,
 body {
   margin: 0;
   padding: 0; }
 
+/* line 22, jilbabas.scss */
 body {
   font-family: 'Roboto', sans-serif; }
 
+/* line 26, jilbabas.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px; }
 
+/* line 33, jilbabas.scss */
 img {
   display: block;
   width: 100%; }
 
+/* line 38, jilbabas.scss */
 a {
   text-decoration: none; }
 
+/* line 42, jilbabas.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
+/* line 49, jilbabas.scss */
 #header .header-top {
   background-color: #fafafa; }
+  /* line 52, jilbabas.scss */
   #header .header-top .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 55, jilbabas.scss */
     #header .header-top .container .contact-info {
       font-size: 13px;
       line-height: 1.3; }
+    /* line 60, jilbabas.scss */
     #header .header-top .container .form {
       font-size: 13px;
       line-height: 1.3;
       height: 100%;
       background-color: #f0b11a;
       padding: 16px 13px; }
+      /* line 67, jilbabas.scss */
       #header .header-top .container .form a {
         color: #000; }
+/* line 74, jilbabas.scss */
 #header .header-middle .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  /* line 76, jilbabas.scss */
   #header .header-middle .search-box .logo,
   #header .header-middle .search-box .icons {
     width: 20%;
     padding: 10px 0; }
     @media (max-width: 640px) {
+      /* line 76, jilbabas.scss */
       #header .header-middle .search-box .logo,
       #header .header-middle .search-box .icons {
         width: 50%; } }
+  /* line 84, jilbabas.scss */
   #header .header-middle .search-box .search-bar {
     width: 50%;
     padding: 10px 0; }
     @media (max-width: 640px) {
+      /* line 84, jilbabas.scss */
       #header .header-middle .search-box .search-bar {
         display: none; } }
+    /* line 90, jilbabas.scss */
     #header .header-middle .search-box .search-bar i {
       position: absolute;
       z-index: 1;
       font-size: 18px;
       padding: 11px 0 10px 15px;
       color: #1c1a1b; }
+    /* line 97, jilbabas.scss */
     #header .header-middle .search-box .search-bar input {
       position: relative;
       font-size: 15px;
@@ -87,33 +120,56 @@ ul {
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px; }
+  /* line 108, jilbabas.scss */
   #header .header-middle .search-box .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: space-evenly; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    /* line 111, jilbabas.scss */
     #header .header-middle .search-box .icons .icon-box {
       text-align: center; }
+      /* line 113, jilbabas.scss */
       #header .header-middle .search-box .icons .icon-box a {
         font-size: 15px;
         color: #6d6d6d; }
+        /* line 116, jilbabas.scss */
         #header .header-middle .search-box .icons .icon-box a span::before {
           content: "\A";
           white-space: pre; }
+/* line 126, jilbabas.scss */
 #header .header-bottom .container {
   overflow: hidden; }
   @media (max-width: 900px) {
+    /* line 126, jilbabas.scss */
     #header .header-bottom .container {
       display: none; } }
+  /* line 131, jilbabas.scss */
   #header .header-bottom .container .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 133, jilbabas.scss */
     #header .header-bottom .container .nav .dropdown {
       float: left;
       overflow: hidden; }
+      /* line 136, jilbabas.scss */
       #header .header-bottom .container .nav .dropdown .dropbtn {
-        font-size: 15px;
+        font-size: 14px;
         border: none;
         padding: 14px 16px;
         text-transform: uppercase;
@@ -121,72 +177,100 @@ ul {
         font-family: inherit;
         margin: 0; }
         @media (max-width: 1200px) {
+          /* line 136, jilbabas.scss */
           #header .header-bottom .container .nav .dropdown .dropbtn {
             padding: 10px 10px; } }
-        @media (max-width: 992px) {
+        @media (max-width: 1033px) {
+          /* line 136, jilbabas.scss */
           #header .header-bottom .container .nav .dropdown .dropbtn {
             padding: 6px 7px; } }
+        @media (max-width: 992px) {
+          /* line 136, jilbabas.scss */
+          #header .header-bottom .container .nav .dropdown .dropbtn {
+            padding: 6px 4px; } }
+        /* line 153, jilbabas.scss */
         #header .header-bottom .container .nav .dropdown .dropbtn i {
           font-size: 13px;
           line-height: 1.3;
           color: #656260;
           margin-left: 10px; }
           @media (max-width: 1200px) {
+            /* line 153, jilbabas.scss */
             #header .header-bottom .container .nav .dropdown .dropbtn i {
-              margin-left: 7px; } }
+              margin-left: 5px; } }
           @media (max-width: 992px) {
+            /* line 153, jilbabas.scss */
             #header .header-bottom .container .nav .dropdown .dropbtn i {
-              margin-left: 3px; } }
+              margin-left: 2px; } }
+      /* line 166, jilbabas.scss */
       #header .header-bottom .container .nav .dropdown .dropdown-content {
         display: none;
         position: absolute;
         background-color: #fafafa;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1; }
+        /* line 173, jilbabas.scss */
         #header .header-bottom .container .nav .dropdown .dropdown-content a {
-          font-size: 13px;
+          font-size: 12px;
           line-height: 1.3;
           float: none;
           color: #656260;
           padding: 12px 16px;
           display: block;
           text-align: left; }
+        /* line 182, jilbabas.scss */
         #header .header-bottom .container .nav .dropdown .dropdown-content a:hover {
           background-color: #ddd; }
+    /* line 188, jilbabas.scss */
     #header .header-bottom .container .nav .dropdown:hover .dropdown-content {
       display: block; }
+    /* line 191, jilbabas.scss */
     #header .header-bottom .container .nav a {
       float: left;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.3;
       text-align: center;
       padding: 14px 16px;
-      color: #f0b11a;
+      color: #1c1a1b;
       text-transform: uppercase; }
+    /* line 200, jilbabas.scss */
     #header .header-bottom .container .nav a.active span {
       color: #f0b11a;
       border-bottom: 2px solid #f0b11a;
       padding-bottom: 10px; }
 
+/* line 209, jilbabas.scss */
 #breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 50px;
   background-color: #1c1a1b; }
+  /* line 215, jilbabas.scss */
   #breadcrumbs .container ul.breadcrumb {
     text-align: center; }
+    /* line 218, jilbabas.scss */
     #breadcrumbs .container ul.breadcrumb li {
       font-size: 15px;
       line-height: 1.3;
       font-weight: 500;
       display: inline;
       color: #f0b11a; }
+      /* line 225, jilbabas.scss */
       #breadcrumbs .container ul.breadcrumb li a {
         color: #6d6d6d; }
+      /* line 229, jilbabas.scss */
       #breadcrumbs .container ul.breadcrumb li a:hover {
         color: #f0b11a; }
+    /* line 234, jilbabas.scss */
     #breadcrumbs .container ul.breadcrumb li + li:before {
       font-size: 15px;
       line-height: 1.3;
@@ -195,31 +279,39 @@ ul {
       color: #6d6d6d;
       content: "/\00a0"; }
 
+/* line 246, jilbabas.scss */
 #jilbabas-design {
   margin: 5vh auto; }
+  /* line 250, jilbabas.scss */
   #jilbabas-design .container .row_1 {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    column-gap: 20px; }
+    -webkit-column-gap: 20px;
+            column-gap: 20px; }
     @media (max-width: 768px) {
+      /* line 250, jilbabas.scss */
       #jilbabas-design .container .row_1 {
         grid-template-columns: 1fr; } }
+    /* line 259, jilbabas.scss */
     #jilbabas-design .container .row_1 .col_1 .form-box {
       padding: 3vw 1vw 1vw 1vw;
       border: 1px solid rgba(0, 0, 0, 0.1);
       -webkit-box-shadow: 2px 0px 27px -8px black;
-      -moz-box-shadow: 2px 0px 27px -8px black;
       box-shadow: 2px 0px 27px -8px black; }
       @media (max-width: 768px) {
+        /* line 259, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-          column-gap: 20px; } }
+          -webkit-column-gap: 20px;
+                  column-gap: 20px; } }
+      /* line 271, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .category-title {
         font-size: 16px;
         line-height: 1.3;
         font-weight: 500;
         color: #1c1a1b; }
+      /* line 277, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type {
         padding-bottom: 15px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -232,8 +324,10 @@ ul {
         /* Show the checkmark when checked */
         /* Style the checkmark/indicator */ }
         @media (max-width: 768px) {
+          /* line 277, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type {
             border: 0; } }
+        /* line 284, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkbox-container {
           display: block;
           position: relative;
@@ -247,8 +341,10 @@ ul {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none; }
+        /* line 298, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .conunter {
           float: right; }
+        /* line 302, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkbox-container input {
           position: absolute;
           cursor: pointer;
@@ -257,6 +353,7 @@ ul {
           height: 15px;
           width: 15px;
           margin: 0; }
+        /* line 312, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkmark {
           position: absolute;
           top: 0;
@@ -264,16 +361,21 @@ ul {
           height: 15px;
           width: 15px;
           background-color: #eee; }
+        /* line 321, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkbox-container:hover input ~ .checkmark {
           background-color: #ccc; }
+        /* line 325, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkbox-container input:checked ~ .checkmark {
           background-color: #f0b11a; }
+        /* line 329, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkmark:after {
           content: "";
           position: absolute;
           display: none; }
+        /* line 335, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkbox-container input:checked ~ .checkmark:after {
           display: block; }
+        /* line 339, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .categories-box .product_type .checkbox-container .checkmark:after {
           left: 4px;
           top: 1px;
@@ -282,14 +384,15 @@ ul {
           border: solid white;
           border-width: 0 3px 3px 0;
           -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
+      /* line 353, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-title {
         font-size: 16px;
         line-height: 1.3;
         font-weight: 500;
         margin: 20px 0 0 0;
         color: #1c1a1b; }
+      /* line 360, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box {
         padding-bottom: 45px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -301,8 +404,10 @@ ul {
         /* Show the checkmark when checked */
         /* Style the checkmark/indicator */ }
         @media (max-width: 768px) {
+          /* line 360, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box {
             border: 0; } }
+        /* line 367, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkbox-container {
           display: inline-block;
           margin: 15px 1px;
@@ -316,6 +421,7 @@ ul {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none; }
+        /* line 382, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkbox-container input {
           position: absolute;
           cursor: pointer;
@@ -324,6 +430,7 @@ ul {
           width: 30px;
           margin: 0;
           left: 0; }
+        /* line 392, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkmark {
           position: absolute;
           top: 0;
@@ -336,14 +443,18 @@ ul {
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           -o-border-radius: 50%; }
+        /* line 407, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkbox-container input:checked ~ .checkmark {
           background-color: inherit; }
+        /* line 412, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkmark:after {
           content: "";
           position: absolute;
           display: none; }
+        /* line 419, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkbox-container input:checked ~ .checkmark:after {
           display: block; }
+        /* line 424, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .color-palette .palette-box .checkbox-container .checkmark:after {
           left: 11px;
           top: 6px;
@@ -352,14 +463,15 @@ ul {
           border: solid white;
           border-width: 0 3px 3px 0;
           -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
+      /* line 438, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-title {
         font-size: 16px;
         line-height: 1.3;
         font-weight: 500;
         color: #1c1a1b;
         margin: 20px 0 0 0; }
+      /* line 445, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-box {
         padding-bottom: 45px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -367,8 +479,10 @@ ul {
         /* Create a custom checkbox */
         /* When the checkbox is checked, add a blue background */ }
         @media (max-width: 768px) {
+          /* line 445, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-box {
             border: 0; } }
+        /* line 451, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-box .checkbox-container {
           display: inline-block;
           margin: 15px 1px;
@@ -379,6 +493,7 @@ ul {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none; }
+        /* line 463, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-box .checkbox-container input {
           position: absolute;
           cursor: pointer;
@@ -387,10 +502,17 @@ ul {
           width: 30px;
           margin: 0;
           left: 0; }
+        /* line 473, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-box .checkmark {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           position: absolute;
           font-size: 15px;
           line-height: 1;
@@ -400,36 +522,44 @@ ul {
           left: 0;
           height: 30px;
           width: 30px; }
+        /* line 488, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .available-size .size-box .checkbox-container input:checked ~ .checkmark {
           color: #f0b11a;
           background-color: #000; }
       @media (max-width: 992px) {
+        /* line 494, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .sale-box {
           display: none; } }
+      /* line 498, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .sale_title {
         font-size: 16px;
         line-height: 1.3;
         font-weight: 500;
         color: #1c1a1b;
         margin: 20px 0 0 0; }
+      /* line 506, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 3vh auto; }
+        /* line 510, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer .special-offer-info {
           margin-left: 10px; }
+          /* line 512, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer .special-offer-info .product-name {
             font-size: 14px;
             line-height: 1.3;
             font-weight: 500;
             color: #656260;
             margin: 0 0 10px 0; }
+          /* line 519, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer .special-offer-info .current-price {
             font-size: 12px;
             line-height: 1.7;
             font-weight: 500;
             margin: 5px 0 0 0;
             color: #1c1a1b; }
+          /* line 526, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer .special-offer-info .original-price {
             font-size: 12px;
             line-height: 1.7;
@@ -437,6 +567,7 @@ ul {
             margin: 0 0 10px 0;
             color: red;
             text-decoration: line-through; }
+          /* line 534, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer .special-offer-info .cart-btn {
             color: #656260;
             background-color: #f0b11a;
@@ -446,35 +577,49 @@ ul {
             -moz-border-radius: 15px;
             -ms-border-radius: 15px;
             -o-border-radius: 15px; }
+            /* line 543, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_1 .form-box .sale-box .offer-container .special-offer .special-offer-info .cart-btn i {
               font-size: 12px; }
     @media (max-width: 768px) {
+      /* line 553, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_2 {
         margin-top: 30px; } }
+    /* line 557, jilbabas.scss */
     #jilbabas-design .container .row_1 .col_2 h2.title {
       font-size: 20px;
       line-height: 1.3;
       font-weight: 600;
       margin: 0 0 15px 0;
       color: #1c1a1b; }
+      /* line 563, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_2 h2.title span {
         color: #656260;
         font-size: 13px;
         line-height: 1.3;
         font-weight: 500; }
+    /* line 570, jilbabas.scss */
     #jilbabas-design .container .row_1 .col_2 .sorting-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       background-color: rgba(0, 0, 0, 0.1);
       padding: 10px; }
+      /* line 576, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number,
       #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position {
         background-color: #fff; }
+        /* line 579, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown,
         #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown {
           float: left;
           overflow: hidden; }
+          /* line 582, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown .dropbtn,
           #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown .dropbtn {
             color: #6d6d6d;
@@ -484,20 +629,24 @@ ul {
             background-color: inherit;
             font-family: inherit;
             margin: 0; }
+            /* line 590, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown .dropbtn i,
             #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown .dropbtn i {
               font-size: 13px;
               line-height: 1.3;
               color: #f0b11a;
               margin-left: 10px; }
+          /* line 597, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown .dropdown-content,
           #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown .dropdown-content {
             display: none;
             position: absolute;
             background-color: #fafafa;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1; }
+            /* line 604, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown .dropdown-content a,
             #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown .dropdown-content a {
               font-size: 13px;
@@ -507,12 +656,15 @@ ul {
               padding: 12px 16px;
               display: block;
               text-align: left; }
+            /* line 613, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown .dropdown-content a:hover,
             #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown .dropdown-content a:hover {
               background-color: #ddd; }
+        /* line 619, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number .dropdown:hover .dropdown-content,
         #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position .dropdown:hover .dropdown-content {
           display: block; }
+        /* line 622, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number a,
         #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position a {
           float: left;
@@ -522,99 +674,136 @@ ul {
           padding: 14px 16px;
           color: #f0b11a;
           text-transform: uppercase; }
+        /* line 631, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .sorting-box .sort_by_number a.active span,
         #jilbabas-design .container .row_1 .col_2 .sorting-box .Sort_by_position a.active span {
           color: #f0b11a;
           border-bottom: 2px solid #f0b11a;
           padding-bottom: 10px; }
+    /* line 637, jilbabas.scss */
     #jilbabas-design .container .row_1 .col_2 .row_2 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 15px; }
+      -webkit-column-gap: 15px;
+              column-gap: 15px; }
       @media (max-width: 992px) {
+        /* line 637, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .row_2 {
           grid-template-columns: 1fr 1fr 1fr;
-          column-gap: 10px; } }
+          -webkit-column-gap: 10px;
+                  column-gap: 10px; } }
       @media (max-width: 768px) {
+        /* line 637, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .row_2 {
           grid-template-columns: 1fr 1fr 1fr 1fr; } }
       @media (max-width: 640px) {
+        /* line 637, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .row_2 {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
+        /* line 637, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .row_2 {
           grid-template-columns: 1fr; } }
+      /* line 654, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_2 .row_2 .row {
         margin-top: 25px; }
+        /* line 656, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .row_2 .row .col {
           text-align: center; }
+          /* line 658, jilbabas.scss */
           #jilbabas-design .container .row_1 .col_2 .row_2 .row .col .product-info {
             padding: 1vh 0; }
+            /* line 660, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_2 .row_2 .row .col .product-info .product-name {
               color: #656260;
               font-size: 16px;
               line-height: 1.3; }
+            /* line 665, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_2 .row_2 .row .col .product-info .discount-product {
               font-size: 15px;
               line-height: 1.3;
               font-weight: bolder;
               text-transform: uppercase; }
+            /* line 671, jilbabas.scss */
             #jilbabas-design .container .row_1 .col_2 .row_2 .row .col .product-info .original-price {
               color: red;
               font-size: 15px;
               text-decoration: line-through; }
+    /* line 680, jilbabas.scss */
     #jilbabas-design .container .row_1 .col_2 .pagination {
       width: 100%;
       margin: 5vh auto;
       background-color: rgba(0, 0, 0, 0.1); }
+      /* line 684, jilbabas.scss */
       #jilbabas-design .container .row_1 .col_2 .pagination .pagination-list {
         max-width: 300px;
         margin: auto;
         padding: 3vh 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center; }
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        /* line 689, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .pagination .pagination-list a {
           font-size: 14px;
           line-height: 1.3;
           font-weight: 500;
           color: #656260; }
+        /* line 695, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .pagination .pagination-list .active {
           color: #000; }
+        /* line 698, jilbabas.scss */
         #jilbabas-design .container .row_1 .col_2 .pagination .pagination-list a:hover {
           color: #f0b11a; }
 
+/* line 708, jilbabas.scss */
 #services {
   padding: 10vh 0px;
   -webkit-box-shadow: inset 0px -9px 24px 2px #fafafa;
-  -moz-box-shadow: inset 0px -9px 24px 2px #fafafa;
   box-shadow: inset 0px -9px 24px 2px #fafafa; }
+  /* line 714, jilbabas.scss */
   #services .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px; }
+    -webkit-column-gap: 20px;
+            column-gap: 20px; }
     @media (max-width: 768px) {
+      /* line 714, jilbabas.scss */
       #services .container {
         grid-template-columns: 1fr 1fr; } }
     @media (max-width: 500px) {
+      /* line 714, jilbabas.scss */
       #services .container {
         grid-template-columns: 1fr; } }
+    /* line 725, jilbabas.scss */
     #services .container .col {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       @media (max-width: 768px) {
+        /* line 725, jilbabas.scss */
         #services .container .col {
           margin: 10px 0; } }
+      /* line 731, jilbabas.scss */
       #services .container .col img {
         max-width: 45px;
         max-height: 45px; }
+      /* line 736, jilbabas.scss */
       #services .container .col .services-info {
         margin-left: 20px; }
+        /* line 739, jilbabas.scss */
         #services .container .col .services-info .service-title {
           font-size: 15px;
           line-height: 1.3;
           font-weight: 600;
           margin: 0px 0px 10px 0px;
           color: #1c1a1b; }
+        /* line 747, jilbabas.scss */
         #services .container .col .services-info .service-desc {
           font-size: 14px;
           line-height: 1.3;
@@ -622,12 +811,21 @@ ul {
           color: #656260;
           margin: 10px 0px 0px 0px; }
 
+/* line 759, jilbabas.scss */
 #email-subscribe {
   margin: 10vh 0; }
+  /* line 762, jilbabas.scss */
   #email-subscribe .container .email-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 766, jilbabas.scss */
     #email-subscribe .container .email-box input {
       padding-left: 15px;
       font-size: 15px;
@@ -638,8 +836,10 @@ ul {
       border: 0;
       background-color: #fafafa; }
       @media (max-width: 768px) {
+        /* line 766, jilbabas.scss */
         #email-subscribe .container .email-box input {
           width: 70%; } }
+    /* line 779, jilbabas.scss */
     #email-subscribe .container .email-box button {
       font-size: 15px;
       line-height: 1.3;
@@ -649,36 +849,47 @@ ul {
       border: 0;
       background-color: #f0b11a; }
 
+/* line 792, jilbabas.scss */
 footer {
   background-color: #1c1a1b; }
+  /* line 794, jilbabas.scss */
   footer .footer-top {
     padding: 10vh 0; }
+    /* line 796, jilbabas.scss */
     footer .footer-top .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 10px;
+      -webkit-column-gap: 10px;
+              column-gap: 10px;
       color: #6d6d6d; }
       @media (max-width: 768px) {
+        /* line 796, jilbabas.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
+        /* line 796, jilbabas.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr; } }
       @media (max-width: 768px) {
+        /* line 807, jilbabas.scss */
         footer .footer-top .container .col_2, footer .footer-top .container .col_3, footer .footer-top .container .col_4 {
           display: none; } }
+      /* line 812, jilbabas.scss */
       footer .footer-top .container p {
         font-size: 14px;
         line-height: 1.3;
         font-weight: 300;
         margin: 10px auto; }
+      /* line 818, jilbabas.scss */
       footer .footer-top .container a {
         font-size: 14px;
         line-height: 1.7;
         font-weight: 300;
         color: #6d6d6d; }
+      /* line 824, jilbabas.scss */
       footer .footer-top .container img {
         max-width: 150px; }
+      /* line 827, jilbabas.scss */
       footer .footer-top .container .contact-title,
       footer .footer-top .container .footer-title {
         font-size: 17px;
@@ -686,10 +897,12 @@ footer {
         font-weight: 600;
         margin: 10px 0 5px 0;
         color: #fff; }
+      /* line 835, jilbabas.scss */
       footer .footer-top .container .footer-title {
         position: relative;
         padding: 0 0 15px 0;
         text-transform: uppercase; }
+      /* line 840, jilbabas.scss */
       footer .footer-top .container .footer-title::after {
         content: "";
         position: absolute;
@@ -698,50 +911,74 @@ footer {
         left: 0;
         bottom: 0;
         background-color: #f0b11a; }
+      /* line 850, jilbabas.scss */
       footer .footer-top .container ul li:nth-child(1) {
         margin-top: 25px; }
+      /* line 853, jilbabas.scss */
       footer .footer-top .container ul li:hover a {
         color: #f0b11a; }
+      /* line 858, jilbabas.scss */
       footer .footer-top .container ul.social-icon li {
         display: inline;
         margin: 0 10px; }
+        /* line 861, jilbabas.scss */
         footer .footer-top .container ul.social-icon li a {
           font-size: 16px; }
+        /* line 864, jilbabas.scss */
         footer .footer-top .container ul.social-icon li a:hover {
           color: #f0b11a; }
+      /* line 869, jilbabas.scss */
       footer .footer-top .container .col_5 {
         display: none;
         /* Accordion styles */ }
         @media (max-width: 768px) {
+          /* line 869, jilbabas.scss */
           footer .footer-top .container .col_5 {
             display: block; } }
         @media (max-width: 500px) {
+          /* line 869, jilbabas.scss */
           footer .footer-top .container .col_5 {
             margin-top: 20px; } }
+        /* line 877, jilbabas.scss */
         footer .footer-top .container .col_5 input {
           position: absolute;
           opacity: 0;
           z-index: -1; }
+        /* line 883, jilbabas.scss */
         footer .footer-top .container .col_5 .row {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex; }
+          /* line 885, jilbabas.scss */
           footer .footer-top .container .col_5 .row .col {
-            flex: 1; }
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1; }
+            /* line 887, jilbabas.scss */
             footer .footer-top .container .col_5 .row .col:last-child {
               margin-left: 1em; }
+        /* line 893, jilbabas.scss */
         footer .footer-top .container .col_5 .tabs {
           overflow: hidden; }
+        /* line 896, jilbabas.scss */
         footer .footer-top .container .col_5 .tab {
           width: 100%;
           overflow: hidden; }
+          /* line 899, jilbabas.scss */
           footer .footer-top .container .col_5 .tab-label {
             font-size: 15px;
             line-height: 1.3;
             font-weight: 500;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             color: #fff;
             padding: 1em;
             cursor: pointer; }
+            /* line 908, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-label::before {
               font-family: "Font Awesome 5 Free";
               content: "\f054";
@@ -751,8 +988,10 @@ footer {
               height: 1em;
               color: #f0b11a;
               text-align: center;
+              -webkit-transition: all .35s;
               transition: all .35s;
               margin-right: 10px; }
+          /* line 921, jilbabas.scss */
           footer .footer-top .container .col_5 .tab-content {
             font-size: 13px;
             line-height: 1.5;
@@ -762,33 +1001,54 @@ footer {
             max-height: 0;
             padding: 0 1em;
             color: #656260;
+            -webkit-transition: all .35s;
             transition: all .35s; }
+            /* line 932, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-content ul li:nth-child(1) {
               margin-top: 0px; }
+            /* line 935, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-content ul li:hover a {
               color: #f0b11a; }
+          /* line 940, jilbabas.scss */
           footer .footer-top .container .col_5 .tab-close {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: flex-end;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
             padding: 1em;
             font-size: 0.75em;
             background: #656260;
             cursor: pointer; }
+            /* line 947, jilbabas.scss */
             footer .footer-top .container .col_5 .tab-close:hover {
               background: #4b4947; }
+        /* line 955, jilbabas.scss */
         footer .footer-top .container .col_5 input:checked + .tab-label::before {
-          transform: rotate(90deg); }
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg); }
+        /* line 959, jilbabas.scss */
         footer .footer-top .container .col_5 input:checked ~ .tab-content {
           max-height: 100vh;
           padding: 1em;
           margin-left: 25px; }
+  /* line 968, jilbabas.scss */
   footer .footer-bottom {
     color: #fff;
     background-color: #000; }
+    /* line 971, jilbabas.scss */
     footer .footer-bottom .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: space-between; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      /* line 975, jilbabas.scss */
       footer .footer-bottom .container .copyright {
         font-size: 15px;
         line-height: 1.3;
