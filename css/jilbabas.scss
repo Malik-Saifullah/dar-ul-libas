@@ -1,0 +1,980 @@
+@import "./vendor/font-awesome";
+@import "./vendor/variables";
+@import "./vendor/mixin";
+@import "./vendor/fonts";
+
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#header {
+    .header-top {
+        background-color: $colorLightGray;
+
+        .container {
+            @include flexCenter;
+
+            .contact-info {
+                font-size: 13px;
+                line-height: 1.3;
+            }
+
+            .form {
+                font-size: 13px;
+                line-height: 1.3;
+                height: 100%;
+                background-color: $colorButterCup;
+                padding: 16px 13px;
+
+                a {
+                    color: $colorBlack;
+                }
+            }
+        }
+    }
+    .header-middle {
+        .search-box {
+            @include flexCenter;
+            .logo,
+            .icons {
+                width: 20%;
+                padding: 10px 0;
+                @media(max-width:640px){
+                    width: 50%;
+                }
+            }
+            .search-bar {
+                width: 50%;
+                padding: 10px 0;
+                @media(max-width:640px){
+                    display: none;
+                }
+                i{
+                    position: absolute;
+                    z-index: 1;
+                    font-size: 18px;
+                    padding: 11px 0 10px 15px;
+                    color: $colorDarkChocolateBrown;
+                }
+                input {
+                    position: relative;
+                    font-size: 15px;
+                    line-height: 1.3;
+                    width: 100%;
+                    padding: 10px 20px 10px 40px;
+                    background-color: $colorLightGray;
+                    border: 1px solid rgba($color: #000, $alpha: .2);
+                    @include borderRadius;
+                }
+            }
+            .icons {
+                @include flexCenter;
+                justify-content: space-evenly;
+                .icon-box {
+                    text-align: center;
+                    a {
+                        font-size: 15px;
+                        color: $colorGray;
+                        span::before {
+                            content: "\A";
+                            white-space: pre;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom {
+        .container {
+            overflow: hidden;
+            @media(max-width:900px) {
+                display: none;
+            }
+            .nav {
+                @include flexCenter;
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                    .dropbtn {
+                        font-size: 15px;
+                        border: none;
+                        padding: 14px 16px;
+                        text-transform: uppercase;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                        @media(max-width:1200px){
+                            padding: 10px 10px;
+                        }
+                        @media(max-width:992px) {
+                            padding: 6px 7px;
+                        }
+                        i{
+                            font-size: 13px;
+                            line-height: 1.3;
+                            color: $colorDarkGray;
+                            margin-left: 10px;
+                            @media(max-width:1200px) {
+                                margin-left: 7px;
+                            }
+                            @media(max-width:992px) {
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: $colorLightGray;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                        z-index: 1;
+                        a {
+                            font-size: 13px;
+                            line-height: 1.3;
+                            float: none;
+                            color: $colorDarkGray;
+                            padding: 12px 16px;
+                            display: block;
+                            text-align: left;
+                        }
+                        a:hover {
+                            background-color: #ddd;
+                            ;
+                        }
+                    }
+                }
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                a {
+                    float: left;
+                    font-size: 15px;
+                    line-height: 1.3;
+                    text-align: center;
+                    padding: 14px 16px;
+                    color: $colorButterCup;
+                    text-transform: uppercase;
+                }
+                a.active span {
+                    @include navBorderBottom;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+#breadcrumbs {
+    @include flexCenter;
+    min-height: 50px;
+    background-color: $colorDarkChocolateBrown;
+
+    .container {
+        ul.breadcrumb {
+            text-align: center;
+
+            li {
+                font-size: 15px;
+                line-height: 1.3;
+                font-weight: 500;
+                display: inline;
+                color: $colorButterCup;
+
+                a {
+                    color: $colorGray;
+                }
+
+                a:hover {
+                    color: $colorButterCup;
+                }
+            }
+
+            li+li:before {
+                font-size: 15px;
+                line-height: 1.3;
+                font-weight: 600;
+                padding: 8px;
+                color: $colorGray;
+                content: "/\00a0";
+            }
+        }
+    }
+}
+
+#jilbabas-design {
+    margin: 5vh auto;
+
+    .container {
+        .row_1 {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            column-gap: 20px;
+            @media(max-width:768px){
+                grid-template-columns: 1fr;
+            }
+
+            .col_1 {
+                .form-box{
+                    padding: 3vw 1vw 1vw 1vw;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    -webkit-box-shadow: 2px 0px 27px -8px rgba(0, 0, 0, 1);
+                    -moz-box-shadow: 2px 0px 27px -8px rgba(0, 0, 0, 1);
+                    box-shadow: 2px 0px 27px -8px rgba(0, 0, 0, 1);
+                    @media(max-width:768px){
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        column-gap: 20px;
+                    }
+                    .categories-box{
+                        .category-title{
+                            font-size: 16px;
+                            line-height: 1.3;
+                            font-weight: 500;
+                            color: $colorDarkChocolateBrown;
+                        }
+                        .product_type {
+                            padding-bottom: 15px;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                            @media(max-width:768px){
+                                border: 0;
+                            }
+                            /* The container */
+                            .checkbox-container {
+                                display: block;
+                                position: relative;
+                                padding-left: 28px;
+                                margin-bottom: 12px;
+                                cursor: pointer;
+                                font-size: 13px;
+                                line-height: 1.3;
+                                font-weight: 400;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                            }
+                            .conunter{
+                                float: right;
+                            }
+                            /* Hide the browser's default checkbox */
+                            .checkbox-container input {
+                                position: absolute;
+                                cursor: pointer;
+                                opacity: 0;
+                                left: 0;
+                                height: 15px;
+                                width: 15px;
+                                margin: 0;
+                            }
+                            /* Create a custom checkbox */
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 15px;
+                                width: 15px;
+                                background-color: #eee;
+                            }
+                            /* On mouse-over, add a grey background color */
+                            .checkbox-container:hover input~.checkmark {
+                                background-color: #ccc;
+                            }
+                            /* When the checkbox is checked, add a blue background */
+                            .checkbox-container input:checked~.checkmark {
+                                background-color: $colorButterCup;
+                            }
+                            /* Create the checkmark/indicator (hidden when not checked) */
+                            .checkmark:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+                            /* Show the checkmark when checked */
+                            .checkbox-container input:checked~.checkmark:after {
+                                display: block;
+                            }
+                            /* Style the checkmark/indicator */
+                            .checkbox-container .checkmark:after {
+                                left: 4px;
+                                top: 1px;
+                                width: 4px;
+                                height: 8px;
+                                border: solid white;
+                                border-width: 0 3px 3px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                    .color-palette{
+                        .palette-title{
+                            font-size: 16px;
+                            line-height: 1.3;
+                            font-weight: 500;
+                            margin: 20px 0 0 0;
+                            color: $colorDarkChocolateBrown;
+                        }
+                        .palette-box {
+                            padding-bottom: 45px;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                            @media(max-width:768px){
+                                border: 0;
+                            }
+                            /* The container */
+                            .checkbox-container {
+                                display: inline-block;
+                                margin: 15px 1px;
+                                position: relative;
+                                padding-left: 28px;
+                                cursor: pointer;
+                                font-size: 13px;
+                                line-height: 1.3;
+                                font-weight: 400;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                            }
+                            /* Hide the browser's default checkbox */
+                            .checkbox-container input {
+                                position: absolute;
+                                cursor: pointer;
+                                opacity: 0;
+                                height: 30px;
+                                width: 30px;
+                                margin: 0;
+                                left: 0;
+                            }
+                            /* Create a custom checkbox */
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 30px;
+                                width: 30px;
+                                background-color: #eee;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                            }
+        
+                            /* When the checkbox is checked, add a blue background */
+                            .checkbox-container input:checked~.checkmark {
+                                background-color: inherit;
+                            }
+        
+                            /* Create the checkmark/indicator (hidden when not checked) */
+                            .checkmark:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+        
+                            /* Show the checkmark when checked */
+                            .checkbox-container input:checked~.checkmark:after {
+                                display: block;
+                            }
+        
+                            /* Style the checkmark/indicator */
+                            .checkbox-container .checkmark:after {
+                                left: 11px;
+                                top: 6px;
+                                width: 5px;
+                                height: 12px;
+                                border: solid white;
+                                border-width: 0 3px 3px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                    .available-size{
+                        .size-title{
+                            font-size: 16px;
+                            line-height: 1.3;
+                            font-weight: 500;
+                            color: $colorDarkChocolateBrown;
+                            margin: 20px 0 0 0;
+                        }
+                        .size-box{
+                            padding-bottom: 45px;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                            @media(max-width:768px){
+                                border: 0;
+                            }
+                            .checkbox-container {
+                                display: inline-block;
+                                margin: 15px 1px;
+                                position: relative;
+                                padding-left: 28px;
+                                cursor: pointer;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                            }
+                            /* Hide the browser's default checkbox */
+                            .checkbox-container input {
+                                position: absolute;
+                                cursor: pointer;
+                                opacity: 0;
+                                height: 30px;
+                                width: 30px;
+                                margin: 0;
+                                left: 0;
+                            }
+                            /* Create a custom checkbox */
+                            .checkmark {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                font-size: 15px;
+                                line-height: 1;
+                                font-weight: 400;
+                                border: 1px solid rgba(0, 0, 0, 0.2);
+                                top: 0;
+                                left: 0;
+                                height: 30px;
+                                width: 30px;
+                            }
+                            /* When the checkbox is checked, add a blue background */
+                            .checkbox-container input:checked~.checkmark {
+                                color: $colorButterCup;
+                                background-color: $colorBlack;
+                            }
+                        }
+                    }
+                    .sale-box{
+                        @media(max-width:992px){
+                            display: none;
+                        }
+                        .sale_title{
+                            font-size: 16px;
+                            line-height: 1.3;
+                            font-weight: 500;
+                            color: $colorDarkChocolateBrown;
+                            margin: 20px 0 0 0;
+                        }
+                        .offer-container{
+                            .special-offer{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                margin: 3vh auto;
+                                .special-offer-info{
+                                    margin-left: 10px;
+                                    .product-name{
+                                        font-size: 14px;
+                                        line-height: 1.3;
+                                        font-weight: 500;
+                                        color: $colorDarkGray;
+                                        margin: 0 0 10px 0;
+                                    }
+                                    .current-price{
+                                        font-size: 12px;
+                                        line-height: 1.7;
+                                        font-weight: 500;
+                                        margin: 5px 0 0 0;
+                                        color: $colorDarkChocolateBrown;
+                                    }
+                                    .original-price{
+                                        font-size: 12px;
+                                        line-height: 1.7;
+                                        font-weight: 500;
+                                        margin: 0 0 10px 0;
+                                        color: $colorRed;
+                                        text-decoration: line-through;
+                                    }
+                                    .cart-btn{
+                                        color: $colorDarkGray;
+                                        background-color: $colorButterCup;
+                                        padding: 5px 15px;
+                                        border-radius: 15px;
+                                        -webkit-border-radius: 15px;
+                                        -moz-border-radius: 15px;
+                                        -ms-border-radius: 15px;
+                                        -o-border-radius: 15px;
+                                        i{
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col_2 {
+                @media(max-width:768px){
+                    margin-top: 30px;
+                }
+                h2.title {
+                    font-size: 20px;
+                    line-height: 1.3;
+                    font-weight: 600;
+                    margin: 0 0 15px 0;
+                    color: $colorDarkChocolateBrown;
+                    span {
+                        color: $colorDarkGray;
+                        font-size: 13px;
+                        line-height: 1.3;
+                        font-weight: 500;
+                    }
+                }
+                .sorting-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    padding: 10px;
+                    .sort_by_number,
+                    .Sort_by_position {
+                        background-color: $colorWhite;
+                        .dropdown {
+                            float: left;
+                            overflow: hidden;
+                            .dropbtn {
+                                color: $colorGray;
+                                font-size: 15px;
+                                border: none;
+                                padding: 14px 16px;
+                                background-color: inherit;
+                                font-family: inherit;
+                                margin: 0;
+                                i {
+                                    font-size: 13px;
+                                    line-height: 1.3;
+                                    color: $colorButterCup;
+                                    margin-left: 10px;
+                                }
+                            }
+                            .dropdown-content {
+                                display: none;
+                                position: absolute;
+                                background-color: $colorLightGray;
+                                min-width: 160px;
+                                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                z-index: 1;
+                                a {
+                                    font-size: 13px;
+                                    line-height: 1.3;
+                                    float: none;
+                                    color: $colorGray;
+                                    padding: 12px 16px;
+                                    display: block;
+                                    text-align: left;
+                                }
+                                a:hover {
+                                    background-color: #ddd;
+                                    ;
+                                }
+                            }
+                        }
+                        .dropdown:hover .dropdown-content {
+                            display: block;
+                        }
+                        a {
+                            float: left;
+                            font-size: 15px;
+                            line-height: 1.3;
+                            text-align: center;
+                            padding: 14px 16px;
+                            color: $colorButterCup;
+                            text-transform: uppercase;
+                        }
+                        a.active span {
+                            @include navBorderBottom;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+                .row_2 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    column-gap: 15px;
+                    @media(max-width:992px){
+                        grid-template-columns: 1fr 1fr 1fr;
+                        column-gap: 10px;
+                    }
+                    @media(max-width:768px) {
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                    }
+                    @media(max-width:640px){
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    @media(max-width:500px){
+                        grid-template-columns: 1fr;
+                    }
+                    .row {
+                        margin-top: 25px;
+                        .col {
+                            text-align: center;
+                            .product-info {
+                                padding: 1vh 0;
+                                .product-name {
+                                    color: $colorDarkGray;
+                                    font-size: 16px;
+                                    line-height: 1.3;
+                                }
+                                .discount-product {
+                                    font-size: 15px;
+                                    line-height: 1.3;
+                                    font-weight: bolder;
+                                    text-transform: uppercase;
+                                }
+                                .original-price {
+                                    color: $colorRed;
+                                    font-size: 15px;
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagination {
+                    width: 100%;
+                    margin: 5vh auto;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    .pagination-list {
+                        max-width: 300px;
+                        margin: auto;
+                        padding: 3vh 0;
+                        @include flexCenter;
+                        a {
+                            font-size: 14px;
+                            line-height: 1.3;
+                            font-weight: 500;
+                            color: $colorDarkGray;
+                        }
+                        .active {
+                            color: $colorBlack;
+                        }
+                        a:hover {
+                            color: $colorButterCup;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#services {
+    padding: 10vh 0px;
+    -webkit-box-shadow: inset 0px -9px 24px 2px rgba(250, 250, 250, 1);
+    -moz-box-shadow: inset 0px -9px 24px 2px rgba(250, 250, 250, 1);
+    box-shadow: inset 0px -9px 24px 2px rgba(250, 250, 250, 1);
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        @media(max-width:768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width:500px) {
+            grid-template-columns: 1fr;
+        }
+
+        .col {
+            display: flex;
+            @media(max-width:768px) {
+                margin: 10px 0;
+            }
+
+            img {
+                max-width: 45px;
+                max-height: 45px;
+            }
+
+            .services-info {
+                margin-left: 20px;
+
+                .service-title {
+                    font-size: 15px;
+                    line-height: 1.3;
+                    font-weight: 600;
+                    margin: 0px 0px 10px 0px;
+                    color: $colorDarkChocolateBrown;
+                }
+
+                .service-desc {
+                    font-size: 14px;
+                    line-height: 1.3;
+                    font-weight: 400;
+                    color: $colorDarkGray;
+                    margin: 10px 0px 0px 0px;
+                }
+            }
+        }
+    }
+}
+
+#email-subscribe {
+    margin: 10vh 0;
+    .container {
+        .email-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input {
+                padding-left: 15px;
+                font-size: 15px;
+                line-height: 1.3;
+                font-weight: 400;
+                width: 40%;
+                min-height: 40px;
+                border: 0;
+                background-color: $colorLightGray;
+                @media(max-width:768px){
+                    width: 70%;
+                }
+            }
+            button {
+                font-size: 15px;
+                line-height: 1.3;
+                font-weight: 600;
+                min-width: 110px;
+                min-height: 40px;
+                border: 0;
+                background-color: $colorButterCup;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $colorDarkChocolateBrown;
+    .footer-top {
+        padding: 10vh 0;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+            color: $colorGray;
+            @media(max-width:768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @media(max-width:500px) {
+                grid-template-columns: 1fr;
+            }
+            .col_2,.col_3,.col_4{
+                @media(max-width:768px) {
+                    display: none;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.3;
+                font-weight: 300;
+                margin: 10px auto;
+            }
+            a {
+                font-size: 14px;
+                line-height: 1.7;
+                font-weight: 300;
+                color: $colorGray;
+            }
+            img {
+                max-width: 150px;
+            }
+            .contact-title,
+            .footer-title {
+                font-size: 17px;
+                line-height: 1.3;
+                font-weight: 600;
+                margin: 10px 0 5px 0;
+                color: $colorWhite;
+            }
+            .footer-title {
+                position: relative;
+                padding: 0 0 15px 0;
+                text-transform: uppercase;
+            }
+            .footer-title::after {
+                content: "";
+                position: absolute;
+                width: 35px;
+                height: 5px;
+                left: 0;
+                bottom: 0;
+                background-color: $colorButterCup;
+            }
+            ul{
+                li:nth-child(1) {
+                margin-top: 25px;
+                }
+                li:hover a{
+                    color: $colorButterCup;
+                }
+            }
+            ul.social-icon{
+                li{
+                    display: inline;
+                    margin: 0 10px;
+                    a{
+                        font-size: 16px;
+                    }
+                    a:hover{
+                        color: $colorButterCup;
+                    }
+                }
+            }
+            .col_5{
+                display: none;
+                @media(max-width:768px){
+                    display: block;
+                }
+                @media(max-width:500px){
+                    margin-top: 20px;
+                }
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    z-index: -1;
+                }
+                // Layout
+                .row {
+                    display: flex;
+                    .col {
+                        flex: 1;
+                        &:last-child {
+                            margin-left: 1em;
+                        }
+                    }
+                }
+                /* Accordion styles */
+                .tabs {
+                    overflow: hidden;
+                }
+                .tab {
+                    width: 100%;
+                    overflow: hidden;
+                    &-label {
+                        font-size: 15px;
+                        line-height: 1.3;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        color: $colorWhite;
+                        padding: 1em;
+                        cursor: pointer;
+                        &::before {
+                            font-family: "Font Awesome 5 Free";
+                            content: "\f054";
+                            font-size: 13px;
+                            font-weight: 600;
+                            width: 1em;
+                            height: 1em;
+                            color: $colorButterCup;
+                            text-align: center;
+                            transition: all .35s;
+                            margin-right: 10px;
+                        }
+                    }
+                    &-content {
+                        font-size: 13px;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        word-spacing: 2px;
+                        max-height: 0;
+                        padding: 0 1em;
+                        color: $colorDarkGray;
+                        transition: all .35s;
+                        ul{
+                            li:nth-child(1) {
+                            margin-top: 0px;
+                            }
+                            li:hover a{
+                                color: $colorButterCup;
+                            }
+                        }
+                    }
+                    &-close {
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 1em;
+                        font-size: 0.75em;
+                        background: $colorDarkGray;
+                        cursor: pointer;
+                        &:hover {
+                            background: darken($colorDarkGray, 10%);
+                        }
+                    }
+                }
+                // :checked
+                input:checked {
+                    +.tab-label {
+                        &::before {
+                            transform: rotate(90deg);
+                        }
+                    }
+                    ~.tab-content {
+                        max-height: 100vh;
+                        padding: 1em;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        color: $colorWhite;
+        background-color: $colorBlack;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .copyright {
+                font-size: 15px;
+                line-height: 1.3;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+    }
+}

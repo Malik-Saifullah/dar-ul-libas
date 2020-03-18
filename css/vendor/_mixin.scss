@@ -1,0 +1,20 @@
+@import "./variables";
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin borderRadius {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@mixin navBorderBottom {
+    color: $colorButterCup;
+    border-bottom: 2px solid $colorButterCup;
+}
