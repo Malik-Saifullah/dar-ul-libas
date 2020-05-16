@@ -1,112 +1,79 @@
 @import url(../fonts/css/all.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
-/* line 7, main.scss */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none; }
 
-/* line 12, main.scss */
 html {
   scroll-behavior: smooth; }
 
-/* line 16, main.scss */
 html,
 body {
   margin: 0;
   padding: 0; }
 
-/* line 22, main.scss */
 body {
   font-family: 'Roboto', sans-serif; }
 
-/* line 26, main.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 33, main.scss */
 img {
   display: block;
   width: 100%; }
 
-/* line 38, main.scss */
 a {
   text-decoration: none; }
 
-/* line 42, main.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-/* line 49, main.scss */
 #header .header-top {
   background-color: #fafafa; }
-  /* line 52, main.scss */
   #header .header-top .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    /* line 55, main.scss */
+    justify-content: space-between;
+    align-items: center; }
     #header .header-top .container .contact-info {
       font-size: 13px;
       line-height: 1.3; }
-    /* line 60, main.scss */
     #header .header-top .container .form {
       font-size: 13px;
       line-height: 1.3;
       height: 100%;
       background-color: #f0b11a;
       padding: 16px 13px; }
-      /* line 67, main.scss */
       #header .header-top .container .form a {
         color: #000; }
-/* line 74, main.scss */
 #header .header-middle .search-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  /* line 76, main.scss */
+  justify-content: space-between;
+  align-items: center; }
   #header .header-middle .search-box .logo,
   #header .header-middle .search-box .icons {
     width: 20%;
     padding: 10px 0; }
     @media (max-width: 640px) {
-      /* line 76, main.scss */
       #header .header-middle .search-box .logo,
       #header .header-middle .search-box .icons {
         width: 50%; } }
-  /* line 84, main.scss */
   #header .header-middle .search-box .search-bar {
     width: 50%;
     padding: 10px 0; }
     @media (max-width: 640px) {
-      /* line 84, main.scss */
       #header .header-middle .search-box .search-bar {
         display: none; } }
-    /* line 90, main.scss */
     #header .header-middle .search-box .search-bar i {
       position: absolute;
       z-index: 1;
       font-size: 18px;
       padding: 11px 0 10px 15px;
       color: #1c1a1b; }
-    /* line 97, main.scss */
     #header .header-middle .search-box .search-bar input {
       position: relative;
       font-size: 15px;
@@ -120,54 +87,31 @@ ul {
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px; }
-  /* line 108, main.scss */
   #header .header-middle .search-box .icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
-    /* line 111, main.scss */
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly; }
     #header .header-middle .search-box .icons .icon-box {
       text-align: center; }
-      /* line 113, main.scss */
       #header .header-middle .search-box .icons .icon-box a {
         font-size: 15px;
         color: #6d6d6d; }
-        /* line 116, main.scss */
         #header .header-middle .search-box .icons .icon-box a span::before {
           content: "\A";
           white-space: pre; }
-/* line 126, main.scss */
 #header .header-bottom .container {
   overflow: hidden; }
   @media (max-width: 900px) {
-    /* line 126, main.scss */
     #header .header-bottom .container {
       display: none; } }
-  /* line 131, main.scss */
   #header .header-bottom .container .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    /* line 133, main.scss */
+    justify-content: space-between;
+    align-items: center; }
     #header .header-bottom .container .nav .dropdown {
       float: left;
       overflow: hidden; }
-      /* line 136, main.scss */
       #header .header-bottom .container .nav .dropdown .dropbtn {
         font-size: 14px;
         border: none;
@@ -177,41 +121,32 @@ ul {
         font-family: inherit;
         margin: 0; }
         @media (max-width: 1200px) {
-          /* line 136, main.scss */
           #header .header-bottom .container .nav .dropdown .dropbtn {
             padding: 10px 10px; } }
         @media (max-width: 1033px) {
-          /* line 136, main.scss */
           #header .header-bottom .container .nav .dropdown .dropbtn {
             padding: 6px 7px; } }
         @media (max-width: 992px) {
-          /* line 136, main.scss */
           #header .header-bottom .container .nav .dropdown .dropbtn {
             padding: 6px 4px; } }
-        /* line 153, main.scss */
         #header .header-bottom .container .nav .dropdown .dropbtn i {
           font-size: 13px;
           line-height: 1.3;
           color: #656260;
           margin-left: 10px; }
           @media (max-width: 1200px) {
-            /* line 153, main.scss */
             #header .header-bottom .container .nav .dropdown .dropbtn i {
               margin-left: 5px; } }
           @media (max-width: 992px) {
-            /* line 153, main.scss */
             #header .header-bottom .container .nav .dropdown .dropbtn i {
               margin-left: 2px; } }
-      /* line 166, main.scss */
       #header .header-bottom .container .nav .dropdown .dropdown-content {
         display: none;
         position: absolute;
         background-color: #fafafa;
         min-width: 160px;
-        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1; }
-        /* line 173, main.scss */
         #header .header-bottom .container .nav .dropdown .dropdown-content a {
           font-size: 12px;
           line-height: 1.3;
@@ -220,13 +155,10 @@ ul {
           padding: 12px 16px;
           display: block;
           text-align: left; }
-        /* line 182, main.scss */
         #header .header-bottom .container .nav .dropdown .dropdown-content a:hover {
           background-color: #ddd; }
-    /* line 188, main.scss */
     #header .header-bottom .container .nav .dropdown:hover .dropdown-content {
       display: block; }
-    /* line 191, main.scss */
     #header .header-bottom .container .nav a {
       float: left;
       font-size: 14px;
@@ -235,37 +167,29 @@ ul {
       padding: 14px 16px;
       color: #1c1a1b;
       text-transform: uppercase; }
-    /* line 200, main.scss */
     #header .header-bottom .container .nav a.active span {
       color: #f0b11a;
       border-bottom: 2px solid #f0b11a;
       padding-bottom: 10px; }
 
-/* line 209, main.scss */
 #banner {
   display: inline-block;
   width: 100%;
   margin: 3vw auto; }
-  /* line 214, main.scss */
   #banner .banner-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
 
-/* line 220, main.scss */
 #product-category {
   margin: 5vh auto; }
-  /* line 223, main.scss */
   #product-category .category-box {
     display: grid;
     grid-template-columns: 1fr 1.6fr 1fr;
-    -webkit-column-gap: 10px;
-            column-gap: 10px; }
+    column-gap: 10px; }
 
-/* line 230, main.scss */
 #latest-product {
   text-align: center;
   padding: 1vh 0; }
-  /* line 233, main.scss */
   #latest-product .title-box {
     font-size: 23px;
     line-height: 1.3;
@@ -275,16 +199,13 @@ ul {
     text-transform: uppercase;
     padding: 3vh 0; }
     @media (max-width: 640px) {
-      /* line 233, main.scss */
       #latest-product .title-box {
         font-size: 20px;
         font-weight: 600; } }
-    /* line 245, main.scss */
     #latest-product .title-box h3 {
       position: relative;
       padding: 25px;
       margin-bottom: 60px; }
-    /* line 250, main.scss */
     #latest-product .title-box h3::after {
       content: "";
       position: absolute;
@@ -296,78 +217,56 @@ ul {
       margin: auto;
       background-color: #000; }
       @media (max-width: 640px) {
-        /* line 250, main.scss */
         #latest-product .title-box h3::after {
           width: 120px;
           height: 3px; } }
-  /* line 266, main.scss */
   #latest-product .latest-product-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    -webkit-column-gap: 20px;
-            column-gap: 20px; }
+    column-gap: 20px; }
     @media (max-width: 640px) {
-      /* line 266, main.scss */
       #latest-product .latest-product-box {
         grid-template-columns: 1fr 1fr; } }
     @media (max-width: 500px) {
-      /* line 266, main.scss */
       #latest-product .latest-product-box {
         grid-template-columns: 1fr; } }
-    /* line 276, main.scss */
     #latest-product .latest-product-box .product-info {
       padding: 1vh 0; }
-      /* line 278, main.scss */
       #latest-product .latest-product-box .product-info .product-name {
         color: #656260;
         font-size: 16px;
         line-height: 1.3; }
-      /* line 283, main.scss */
       #latest-product .latest-product-box .product-info .discount-product {
         font-size: 15px;
         line-height: 1.3;
         font-weight: bolder;
         text-transform: uppercase; }
-      /* line 289, main.scss */
       #latest-product .latest-product-box .product-info .original-price {
         color: red;
         font-size: 15px;
         text-decoration: line-through; }
 
-/* line 298, main.scss */
 #special-offer {
   width: 100%;
   min-height: 290px;
   position: relative;
   display: inline-block; }
-  /* line 304, main.scss */
   #special-offer img {
     min-height: 290px; }
-  /* line 308, main.scss */
   #special-offer .container {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 5vw; }
-    /* line 314, main.scss */
     #special-offer .container .offer-info {
       max-width: 500px;
       height: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      /* line 322, main.scss */
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
       #special-offer .container .offer-info .add-info {
         text-align: center; }
-        /* line 325, main.scss */
         #special-offer .container .offer-info .add-info .offer-title {
           font-size: 3vw;
           line-height: 1.3;
@@ -377,7 +276,6 @@ ul {
           margin: 0;
           color: #1c1a1b;
           text-transform: uppercase; }
-        /* line 336, main.scss */
         #special-offer .container .offer-info .add-info .offer-subtitle {
           font-size: 2.5vw;
           line-height: 1.3;
@@ -387,7 +285,6 @@ ul {
           margin: 0 0 20px 0;
           color: #1c1a1b;
           text-transform: uppercase; }
-        /* line 347, main.scss */
         #special-offer .container .offer-info .add-info .offer-btn {
           font-size: 15px;
           line-height: 1.3;
@@ -404,50 +301,34 @@ ul {
           -ms-border-radius: 35px;
           -o-border-radius: 35px; }
 
-/* line 368, main.scss */
 #feature-product {
   margin: 10vh auto; }
-  /* line 370, main.scss */
   #feature-product .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    -webkit-column-gap: 10px;
-            column-gap: 10px; }
+    column-gap: 10px; }
     @media (max-width: 768px) {
-      /* line 370, main.scss */
       #feature-product .container {
         grid-template-columns: 1fr 1fr 1fr; } }
     @media (max-width: 500px) {
-      /* line 370, main.scss */
       #feature-product .container {
         grid-template-columns: 1fr 1fr; } }
-    /* line 380, main.scss */
     #feature-product .container .feature-item {
       cursor: pointer; }
       @media (max-width: 768px) {
-        /* line 380, main.scss */
         #feature-product .container .feature-item {
           margin: 5px 0; } }
-      /* line 385, main.scss */
       #feature-product .container .feature-item .slider-box {
         background-color: #ebeaf0;
         padding: 2.3vw;
         cursor: default;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
         height: 100%; }
-        /* line 391, main.scss */
         #feature-product .container .feature-item .slider-box .slider-info {
           text-align: center;
           margin: 0 auto; }
-          /* line 394, main.scss */
           #feature-product .container .feature-item .slider-box .slider-info .slider-text {
             cursor: text;
             font-size: 15px;
@@ -455,12 +336,9 @@ ul {
             font-weight: 700;
             text-align: left;
             text-transform: uppercase; }
-          /* line 402, main.scss */
           #feature-product .container .feature-item .slider-box .slider-info .control-icon-box {
             cursor: pointer;
             font-size: 10px;
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
             display: inline-flex;
             padding: 8px;
             margin: 0 2px;
@@ -471,21 +349,12 @@ ul {
             -ms-border-radius: 5px;
             -o-border-radius: 5px; }
 
-/* line 421, main.scss */
 #email-subscribe {
   margin: 10vh 0; }
-  /* line 424, main.scss */
   #email-subscribe .container .email-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    /* line 428, main.scss */
+    align-items: center;
+    justify-content: center; }
     #email-subscribe .container .email-box input {
       padding-left: 15px;
       font-size: 15px;
@@ -496,10 +365,8 @@ ul {
       border: 0;
       background-color: #fafafa; }
       @media (max-width: 768px) {
-        /* line 428, main.scss */
         #email-subscribe .container .email-box input {
           width: 70%; } }
-    /* line 441, main.scss */
     #email-subscribe .container .email-box button {
       font-size: 15px;
       line-height: 1.3;
@@ -510,47 +377,36 @@ ul {
       background-color: #f0b11a;
       cursor: pointer; }
 
-/* line 455, main.scss */
 footer {
   background-color: #1c1a1b; }
-  /* line 457, main.scss */
   footer .footer-top {
     padding: 10vh 0; }
-    /* line 459, main.scss */
     footer .footer-top .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      -webkit-column-gap: 10px;
-              column-gap: 10px;
+      column-gap: 10px;
       color: #6d6d6d; }
       @media (max-width: 768px) {
-        /* line 459, main.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr 1fr; } }
       @media (max-width: 500px) {
-        /* line 459, main.scss */
         footer .footer-top .container {
           grid-template-columns: 1fr; } }
       @media (max-width: 768px) {
-        /* line 470, main.scss */
         footer .footer-top .container .col_2, footer .footer-top .container .col_3, footer .footer-top .container .col_4 {
           display: none; } }
-      /* line 475, main.scss */
       footer .footer-top .container p {
         font-size: 14px;
         line-height: 1.3;
         font-weight: 300;
         margin: 10px auto; }
-      /* line 481, main.scss */
       footer .footer-top .container a {
         font-size: 14px;
         line-height: 1.7;
         font-weight: 300;
         color: #6d6d6d; }
-      /* line 487, main.scss */
       footer .footer-top .container img {
         max-width: 150px; }
-      /* line 490, main.scss */
       footer .footer-top .container .contact-title,
       footer .footer-top .container .footer-title {
         font-size: 17px;
@@ -558,12 +414,10 @@ footer {
         font-weight: 600;
         margin: 10px 0 5px 0;
         color: #fff; }
-      /* line 498, main.scss */
       footer .footer-top .container .footer-title {
         position: relative;
         padding: 0 0 15px 0;
         text-transform: uppercase; }
-      /* line 503, main.scss */
       footer .footer-top .container .footer-title::after {
         content: "";
         position: absolute;
@@ -572,74 +426,50 @@ footer {
         left: 0;
         bottom: 0;
         background-color: #f0b11a; }
-      /* line 513, main.scss */
       footer .footer-top .container ul li:nth-child(1) {
         margin-top: 25px; }
-      /* line 516, main.scss */
       footer .footer-top .container ul li:hover a {
         color: #f0b11a; }
-      /* line 521, main.scss */
       footer .footer-top .container ul.social-icon li {
         display: inline;
         margin: 0 10px; }
-        /* line 524, main.scss */
         footer .footer-top .container ul.social-icon li a {
           font-size: 16px; }
-        /* line 527, main.scss */
         footer .footer-top .container ul.social-icon li a:hover {
           color: #f0b11a; }
-      /* line 532, main.scss */
       footer .footer-top .container .col_5 {
         display: none;
         /* Accordion styles */ }
         @media (max-width: 768px) {
-          /* line 532, main.scss */
           footer .footer-top .container .col_5 {
             display: block; } }
         @media (max-width: 500px) {
-          /* line 532, main.scss */
           footer .footer-top .container .col_5 {
             margin-top: 20px; } }
-        /* line 540, main.scss */
         footer .footer-top .container .col_5 input {
           position: absolute;
           opacity: 0;
           z-index: -1; }
-        /* line 546, main.scss */
         footer .footer-top .container .col_5 .row {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex; }
-          /* line 548, main.scss */
           footer .footer-top .container .col_5 .row .col {
-            -webkit-box-flex: 1;
-                -ms-flex: 1;
-                    flex: 1; }
-            /* line 550, main.scss */
+            flex: 1; }
             footer .footer-top .container .col_5 .row .col:last-child {
               margin-left: 1em; }
-        /* line 556, main.scss */
         footer .footer-top .container .col_5 .tabs {
           overflow: hidden; }
-        /* line 559, main.scss */
         footer .footer-top .container .col_5 .tab {
           width: 100%;
           overflow: hidden; }
-          /* line 562, main.scss */
           footer .footer-top .container .col_5 .tab-label {
             font-size: 15px;
             line-height: 1.3;
             font-weight: 500;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            align-items: center;
             color: #fff;
             padding: 1em;
             cursor: pointer; }
-            /* line 571, main.scss */
             footer .footer-top .container .col_5 .tab-label::before {
               font-family: "Font Awesome 5 Free";
               content: "\f054";
@@ -649,10 +479,8 @@ footer {
               height: 1em;
               color: #f0b11a;
               text-align: center;
-              -webkit-transition: all .35s;
               transition: all .35s;
               margin-right: 10px; }
-          /* line 584, main.scss */
           footer .footer-top .container .col_5 .tab-content {
             font-size: 13px;
             line-height: 1.5;
@@ -662,56 +490,37 @@ footer {
             max-height: 0;
             padding: 0 1em;
             color: #656260;
-            -webkit-transition: all .35s;
             transition: all .35s; }
-            /* line 595, main.scss */
             footer .footer-top .container .col_5 .tab-content ul li:nth-child(1) {
               margin-top: 0px; }
-            /* line 598, main.scss */
             footer .footer-top .container .col_5 .tab-content ul li:hover a {
               color: #f0b11a; }
-          /* line 603, main.scss */
           footer .footer-top .container .col_5 .tab-close {
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                    justify-content: flex-end;
+            justify-content: flex-end;
             padding: 1em;
             font-size: 0.75em;
             background: #656260;
             cursor: pointer; }
-            /* line 610, main.scss */
             footer .footer-top .container .col_5 .tab-close:hover {
               background: #4b4947; }
-        /* line 618, main.scss */
         footer .footer-top .container .col_5 input:checked + .tab-label::before {
-          -webkit-transform: rotate(90deg);
-                  transform: rotate(90deg); }
-        /* line 622, main.scss */
+          transform: rotate(90deg); }
         footer .footer-top .container .col_5 input:checked ~ .tab-content {
           max-height: 100vh;
           padding: 1em;
           margin-left: 25px; }
-  /* line 631, main.scss */
   footer .footer-bottom {
     color: #fff;
     background-color: #000; }
-    /* line 634, main.scss */
     footer .footer-bottom .container {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      /* line 638, main.scss */
+      align-items: center;
+      justify-content: space-between; }
       footer .footer-bottom .container .copyright {
         font-size: 15px;
         line-height: 1.3;
         font-weight: 400;
         margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
